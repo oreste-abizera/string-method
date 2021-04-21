@@ -1,8 +1,8 @@
-import { capitalize, sum } from '../src';
+import { capitalize, reverse } from '../src';
 
 describe('blah', () => {
   it('works', () => {
-    expect(sum(1, 1)).toEqual(2);
+    expect(reverse('str║ing')).toEqual('gni║rts');
   });
 
   it('works', () => {
