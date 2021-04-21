@@ -4,3 +4,14 @@ export const sum = (a: number, b: number) => {
   }
   return a + b;
 };
+
+export const capitalize = (str: string) => {
+  if (str.length < 0) {
+    return str;
+  }
+
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/\w\S*/g, w => w.replace(/^\w/, c => c.toUpperCase()));
+};
