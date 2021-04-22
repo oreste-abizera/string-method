@@ -1,6 +1,6 @@
-# string-method V0.1.3
+# string-method V0.1.4
 
-The [string-method](https://github.com/oreste-abizera/string-method) library provides access to string methods which are not available in native string in javascript.
+The [string-method](https://github.com/oreste-abizera/string-method) library provides access to string properties and methods that are not available for the native string in javascript.
 
 ## Installation
 
@@ -29,6 +29,16 @@ const str = require('string-method');
 console.log(str.capitalize('my sTring'));
 ```
 
+## Available Methods
+
+1. `capitalize`
+2. `reverse`
+3. `isUpperCase`
+4. `isLowerCase`
+5. `isCamelCase`
+
+We are adding others day by day.
+
 ## Development
 
-Visit our github repository [here](https://github.com/oreste-abizera/string-method).
+Visit our github repository [here](https://github.com/oreste-abizera/string-method). Any suggestion or improvement in this library are welcome.
