@@ -47,6 +47,11 @@ export const toCamelCase = (str: string) => {
 };
 
 export const isPalindrome = (str: string) => {
+  str = str
+    .split(' ')
+    .join('')
+    .toLowerCase();
+
   let palindrome: boolean = true;
   // find the length of a string
   const len: number = str.length;

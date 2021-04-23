@@ -23,10 +23,10 @@ $ yarn add string-method
 Usage:
 
 ```js
-const str = require('string-method');
+const { capitalize } = require('string-method');
 
 // call a method from module
-console.log(str.capitalize('my sTring'));
+console.log(capitalize('my sTring')); //My String
 ```
 
 ## Available Methods

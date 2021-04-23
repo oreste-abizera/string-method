@@ -81,6 +81,6 @@ describe('blah', () => {
     expect(isPalindrome('string')).toEqual(false);
   });
   it('works', () => {
-    expect(isPalindrome('madam')).toEqual(true);
+    expect(isPalindrome('A Santa Lived As a Devil At NASA')).toEqual(true);
   });
 });
