@@ -1,4 +1,4 @@
-# string-method V0.1.4
+# string-method V0.1.5
 
 The [string-method](https://github.com/oreste-abizera/string-method) library provides access to string properties and methods that are not available for the native string in javascript.
 
@@ -35,7 +35,7 @@ console.log(capitalize('my sTring')); //My String
 2. `reverse`
 3. `isUpperCase`
 4. `isLowerCase`
-5. `isCamelCase`
+5. `toCamelCase`
 6. `isPalindrome`
 
 We are adding others day by day.
