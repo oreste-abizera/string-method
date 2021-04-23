@@ -26,13 +26,13 @@ export const isLowerCase = (str: string) => {
 };
 
 export const toCamelCase = (str: string) => {
-  const symbols = ['-', '_'];
+  const symbols: Array<string> = ['-', '_'];
   str = isUpperCase(str)
     ? str.trim()
     : str.trim().replace(/^\w/, c => c.toLowerCase());
 
-  for (let i = 0; i < symbols.length; i++) {
-    let current = str.split(symbols[i]);
+  for (let i: number = 0; i < symbols.length; i++) {
+    let current: Array<string> = str.split(symbols[i]);
     if (current.length > 1) {
       current.forEach((element, index) => {
         element = element.toLowerCase();
@@ -44,4 +44,19 @@ export const toCamelCase = (str: string) => {
     }
   }
   return str;
+};
+
+export const isPalindrome = (str: string) => {
+  let palindrome: boolean = true;
+  // find the length of a string
+  const len: number = str.length;
+
+  // loop through half of the string
+  for (let i: number = 0; i < len / 2; i++) {
+    // check if first and last string are same
+    if (str[i] !== str[len - 1 - i]) {
+      palindrome = false;
+    }
+  }
+  return palindrome;
 };

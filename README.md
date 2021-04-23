@@ -36,6 +36,7 @@ console.log(str.capitalize('my sTring'));
 3. `isUpperCase`
 4. `isLowerCase`
 5. `isCamelCase`
+6. `isPalindrome`
 
 We are adding others day by day.
 

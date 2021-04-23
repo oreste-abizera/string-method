@@ -1,6 +1,7 @@
 import {
   capitalize,
   isLowerCase,
+  isPalindrome,
   isUpperCase,
   reverse,
   toCamelCase,
@@ -73,5 +74,13 @@ describe('blah', () => {
 
   it('works', () => {
     expect(toCamelCase('camelCase')).toEqual('camelCase');
+  });
+
+  //isPalindrome
+  it('works', () => {
+    expect(isPalindrome('string')).toEqual(false);
+  });
+  it('works', () => {
+    expect(isPalindrome('madam')).toEqual(true);
   });
 });
