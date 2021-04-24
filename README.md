@@ -38,8 +38,17 @@ console.log(capitalize('my sTring')); //My String
 5. `toCamelCase`
 6. `isPalindrome`
 
+| Command | Description |
+| --- | --- |
+| `capitalize` | changes the first letter of a word/sentence |
+| `reverse` | changes the order of a word independently |
+| `isUpperCase` | checkes if a word is in upper case |
+| `isLowerCase` | checkes if a word is in lower case |
+| `toCamelCase` | changes a word in any order to camel case notation |
+| `isPalindrome` | checks if a string is the same in reverse order |
+
 We are adding others day by day.
 
 ## Development
 
-Visit our github repository [here](https://github.com/oreste-abizera/string-method). Any suggestion or improvement in this library are welcome.
+Visit our github repository [here](https://github.com/oreste-abizera/string-method). Any suggestion or improvement on this library is welcome.
