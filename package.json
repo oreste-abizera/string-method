@@ -4,6 +4,18 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "keywords": [
+    "javascript",
+    "string",
+    "properties",
+    "methods"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oreste-abizera/string-method"
+  },
+  "bugs": "https://github.com/oreste-abizera/string-method/issues",
+  "homepage": "https://github.com/oreste-abizera/string-method",
   "files": [
     "dist",
     "src"
@@ -33,7 +45,7 @@
     "trailingComma": "es5"
   },
   "name": "string-method",
-  "author": "oreste-abizera",
+  "author": "Oreste Abizera <oresteabizera11@gmail.com> (https://oresteabizera.tech)",
   "module": "dist/string-method.esm.js",
   "size-limit": [
     {
