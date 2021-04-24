@@ -46,3 +46,5 @@ We are adding others day by day.
 ## Development
 
 Visit our github repository [here](https://github.com/oreste-abizera/string-method). Any suggestion or improvement on this library is welcome.
+
+Feel free to create an [issue](https://github.com/oreste-abizera/string-method/issues) or pull request.
