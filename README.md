@@ -31,7 +31,7 @@ console.log(capitalize('my sTring')); //My String
 
 ## Available Methods
 
-| Command | Description |
+| Method | Description |
 | --- | --- |
 | `capitalize` | changes the first letter of a string |
 | `reverse` | changes the order of a word independently |
