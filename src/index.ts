@@ -17,6 +17,14 @@ export const reverse = (str: string) => {
     .join('');
 };
 
+export const reverseWord = (str: string) => {
+  return str
+    .trim()
+    .split(' ')
+    .reverse()
+    .join(' ');
+};
+
 export const isUpperCase = (str: string) => {
   return str === str.toUpperCase() && str !== str.toLowerCase();
 };

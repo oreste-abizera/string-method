@@ -4,6 +4,7 @@ import {
   isPalindrome,
   isUpperCase,
   reverse,
+  reverseWord,
   toCamelCase,
 } from '../src';
 
@@ -11,6 +12,11 @@ describe('blah', () => {
   //reverse
   it('works', () => {
     expect(reverse('str║ing')).toEqual('gni║rts');
+  });
+
+  //reverseWord
+  it('works', () => {
+    expect(reverseWord('Oreste Abizera')).toEqual('Abizera Oreste');
   });
 
   //capitalize
