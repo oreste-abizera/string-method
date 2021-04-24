@@ -31,16 +31,9 @@ console.log(capitalize('my sTring')); //My String
 
 ## Available Methods
 
-1. `capitalize`
-2. `reverse`
-3. `isUpperCase`
-4. `isLowerCase`
-5. `toCamelCase`
-6. `isPalindrome`
-
 | Command | Description |
 | --- | --- |
-| `capitalize` | changes the first letter of a word/sentence |
+| `capitalize` | changes the first letter of a string |
 | `reverse` | changes the order of a word independently |
 | `isUpperCase` | checkes if a word is in upper case |
 | `isLowerCase` | checkes if a word is in lower case |
