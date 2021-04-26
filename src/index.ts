@@ -1,4 +1,8 @@
 export const capitalize = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   if (str.length < 0) {
     return str;
   }
@@ -10,6 +14,10 @@ export const capitalize = (str: string) => {
 };
 
 export const reverse = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   return str
     .trim()
     .split('')
@@ -18,6 +26,10 @@ export const reverse = (str: string) => {
 };
 
 export const reverseWord = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   return str
     .trim()
     .split(' ')
@@ -26,14 +38,26 @@ export const reverseWord = (str: string) => {
 };
 
 export const isUpperCase = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   return str === str.toUpperCase() && str !== str.toLowerCase();
 };
 
 export const isLowerCase = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   return str !== str.toUpperCase() && str === str.toLowerCase();
 };
 
 export const toCamelCase = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   const symbols: Array<string> = ['-', '_'];
   str = isUpperCase(str)
     ? str.trim()
@@ -55,6 +79,10 @@ export const toCamelCase = (str: string) => {
 };
 
 export const isPalindrome = (str: string) => {
+  if (typeof str !== 'string') {
+    console.log('Invalid parameter type.');
+    return;
+  }
   str = str
     .split(' ')
     .join('')
