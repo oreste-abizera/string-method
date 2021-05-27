@@ -109,3 +109,13 @@ export const isEqual = (str1: string, str2: string) => {
 export const isEqualIgnoreCase = (str1: string, str2: string) => {
   return str1.toLowerCase() === str2.toLowerCase();
 };
+
+export function compareMany(...args: any[]) {
+  args = [...args];
+  if (args.length === 0) return false;
+  let equal = true;
+  args.forEach(element => {
+    if (args[0] !== element) equal = false;
+  });
+  return equal;
+}
