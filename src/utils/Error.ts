@@ -8,7 +8,7 @@ interface IError {
  * @param requiredType required type of value to be inputed
  * @returns {IError}
  */
-function ThrowError(input:string,requiredType:string = 'string') : IError{
+function throwError(input:string,requiredType:string = 'string') : IError{
     const error : IError =  {
         error:`Invalid parameter type. \n '${input}' must be type '${requiredType}'`
     }
