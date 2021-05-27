@@ -18,10 +18,21 @@ describe('blah', () => {
     expect(reverse('str║ing')).toEqual('gni║rts');
   });
 
+    //reverse
+    it('reverses a complex string', () => {
+      expect(reverse('s_t_r_i_n_g','_')).toEqual('g_n_i_r_t_s');
+    });
+
   //reverseWord
   it('reverses string words', () => {
     expect(reverseWord('Oreste Abizera')).toEqual('Abizera Oreste');
   });
+
+    //reverseWord
+    it('reverses string words with characters', () => {
+      expect(reverseWord('Oreste_Abizera', '_')).toEqual('Abizera_Oreste');
+    });
+  
 
   //capitalize
   it('capitalizes a string', () => {
@@ -89,9 +100,12 @@ describe('blah', () => {
   //isPalindrome
   it('checks palindrome', () => {
     expect(isPalindrome('string')).toEqual(false);
+    expect(isPalindrome('s/t/r/i/n/g','/')).toEqual(false);
   });
   it('checks palindrome', () => {
     expect(isPalindrome('A Santa Lived As a Devil At NASA')).toEqual(true);
+    expect(isPalindrome('A-Santa-Lived-As-a-Devil-At-NASA','-')).toEqual(true);
+
   });
 });
 
