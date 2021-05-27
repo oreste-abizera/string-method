@@ -9,6 +9,7 @@ import {
   reverseWord,
   toCamelCase,
   compareMany,
+  compareManyIgnoreCase,
 } from '../src';
 
 describe('blah', () => {
@@ -123,5 +124,21 @@ describe('equal', () => {
   });
   it('compares many strings', () => {
     expect(compareMany('String1', 'string1', 'string1')).toEqual(false);
+  });
+
+  it('compares many strings ignoring the case', () => {
+    expect(compareManyIgnoreCase('string1', 'string2', 'string3')).toEqual(
+      false
+    );
+  });
+  it('compares many strings ignoring the case', () => {
+    expect(compareManyIgnoreCase('string1', 'string1', 'string1')).toEqual(
+      true
+    );
+  });
+  it('compares many strings ignoring the case', () => {
+    expect(compareManyIgnoreCase('String1', 'string1', 'string1')).toEqual(
+      true
+    );
   });
 });
