@@ -8,7 +8,10 @@ interface IError {
  * @param requiredType required type of value to be inputed
  * @returns {string}
  */
-function throwError(input: string, requiredType: string = 'string'): string {
+export function throwError(
+  input: string,
+  requiredType: string = 'string'
+): string {
   const error: IError = {
     error: `Invalid parameter type. \n '${input}' must be type '${requiredType}'`,
   };

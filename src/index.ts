@@ -1,12 +1,11 @@
-export {capitalize} from './capitalize'
-export {reverse} from './reverse'
-export {reverseWord} from './reverseWord'
-export {isUpperCase} from './isUpperCase'
-export {isLowerCase} from './isLowerCase'
-export {toCamelCase} from './toCamelCase'
-export {isPalindrome} from './isPalindrome'
-export {areEqual} from './areEqual'
-export { areEqualIgnoreCase} from './areEqualIgnoreCase'
-export {compareMany} from './compareMany'
-export {compareManyIgnoreCase} from './compareManyIgnoreCase'
-
+export { capitalize } from './capitalize';
+export { reverse } from './reverse';
+export { reverseWord } from './reverseWord';
+export { isUpperCase } from './isUpperCase';
+export { isLowerCase } from './isLowerCase';
+export { toCamelCase } from './toCamelCase';
+export { isPalindrome } from './isPalindrome';
+export { areEqual } from './areEqual';
+export { areEqualIgnoreCase } from './areEqualIgnoreCase';
+export { compareMany } from './compareMany';
+export { compareManyIgnoreCase } from './compareManyIgnoreCase';

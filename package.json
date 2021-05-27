@@ -42,7 +42,8 @@
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "endOfLine": "auto"
   },
   "name": "string-method",
   "author": "Oreste Abizera <oresteabizera11@gmail.com> (https://oresteabizera.tech)",

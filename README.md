@@ -1,4 +1,4 @@
-# string-method V0.1.7
+# string-method V0.1.8
 
 The [string-method](https://github.com/oreste-abizera/string-method) library provides access to string properties and methods that are not available for the native string in javascript.
 
