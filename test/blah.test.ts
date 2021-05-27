@@ -10,83 +10,83 @@ import {
 
 describe('blah', () => {
   //reverse
-  it('works', () => {
+  it('reverses a string', () => {
     expect(reverse('str║ing')).toEqual('gni║rts');
   });
 
   //reverseWord
-  it('works', () => {
+  it('reverses string words', () => {
     expect(reverseWord('Oreste Abizera')).toEqual('Abizera Oreste');
   });
 
   //capitalize
-  it('works', () => {
+  it('capitalizes a string', () => {
     expect(capitalize('mY sTring')).toEqual('My String');
   });
 
   //isLowerCase
-  it('works', () => {
+  it('checks lowercase', () => {
     expect(isLowerCase('mY sTring')).toEqual(false);
   });
 
-  it('works', () => {
+  it('checks lowercase', () => {
     expect(isLowerCase('MY STRING')).toEqual(false);
   });
 
-  it('works', () => {
+  it('checks lowecase', () => {
     expect(isLowerCase('my string')).toEqual(true);
   });
 
   //isUpperCase
-  it('works', () => {
+  it('checks uppercase', () => {
     expect(isUpperCase('mY sTring')).toEqual(false);
   });
 
-  it('works', () => {
+  it('checks uppercase', () => {
     expect(isUpperCase('MY STRING')).toEqual(true);
   });
 
-  it('works', () => {
+  it('checks uppercase', () => {
     expect(isUpperCase('my string')).toEqual(false);
   });
 
   //toCamelCase
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('PascalCase')).toEqual('pascalCase');
   });
 
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase(' Train-Case')).toEqual('trainCase');
   });
 
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('MACRO_CASE')).toEqual('macroCase');
   });
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('flatcase')).toEqual('flatcase');
   });
 
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('kebab-case')).toEqual('kebabCase');
   });
 
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('snake_case')).toEqual('snakeCase');
   });
 
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('UPPERCASE')).toEqual('UPPERCASE');
   });
 
-  it('works', () => {
+  it('converts to camelcase', () => {
     expect(toCamelCase('camelCase')).toEqual('camelCase');
   });
 
   //isPalindrome
-  it('works', () => {
+  it('checks palindrome', () => {
     expect(isPalindrome('string')).toEqual(false);
   });
-  it('works', () => {
+  it('checks palindrome', () => {
     expect(isPalindrome('A Santa Lived As a Devil At NASA')).toEqual(true);
   });
 });
