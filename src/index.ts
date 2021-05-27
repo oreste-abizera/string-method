@@ -13,28 +13,28 @@ export function capitalize(str: string) {
     .replace(/\w\S*/g, w => w.replace(/^\w/, c => c.toUpperCase()));
 }
 
-export function reverse(str: string) {
+export function reverse(str: string, separator:string = '') {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
   }
   return str
     .trim()
-    .split('')
+    .split(separator)
     .reverse()
-    .join('');
+    .join(separator);
 }
 
-export function reverseWord(str: string) {
+export function reverseWord(str: string, separator: string = ' ') {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
   }
   return str
     .trim()
-    .split(' ')
+    .split(separator)
     .reverse()
-    .join(' ');
+    .join(separator);
 }
 
 export function isUpperCase(str: string) {
@@ -78,13 +78,13 @@ export function toCamelCase(str: string) {
   return str;
 }
 
-export function isPalindrome(str: string) {
+export function isPalindrome(str: string, separator:string = ' ') {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
   }
   str = str
-    .split(' ')
+    .split(separator)
     .join('')
     .toLowerCase();
 
