@@ -1,5 +1,7 @@
 import {
   capitalize,
+  isEqual,
+  isEqualIgnoreCase,
   isLowerCase,
   isPalindrome,
   isUpperCase,
@@ -88,5 +90,27 @@ describe('blah', () => {
   });
   it('checks palindrome', () => {
     expect(isPalindrome('A Santa Lived As a Devil At NASA')).toEqual(true);
+  });
+});
+
+describe('equal', () => {
+  it('checks equality of strings', () => {
+    expect(isEqual('string1', 'String1')).toEqual(false);
+  });
+  it('checks equality of strings', () => {
+    expect(isEqual('string1', 'string1')).toEqual(true);
+  });
+  it('checks equality of strings', () => {
+    expect(isEqual('string', 'String1')).toEqual(false);
+  });
+
+  it('checks equality of strings ignoring case', () => {
+    expect(isEqualIgnoreCase('string1', 'String1')).toEqual(true);
+  });
+  it('checks equality of strings ignoring case', () => {
+    expect(isEqualIgnoreCase('string1', 'string1')).toEqual(true);
+  });
+  it('checks equality of strings ignoring case', () => {
+    expect(isEqualIgnoreCase('string', 'string1')).toEqual(false);
   });
 });
