@@ -1,4 +1,4 @@
-export const capitalize = (str: string) => {
+export function capitalize(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
@@ -11,9 +11,9 @@ export const capitalize = (str: string) => {
     .trim()
     .toLowerCase()
     .replace(/\w\S*/g, w => w.replace(/^\w/, c => c.toUpperCase()));
-};
+}
 
-export const reverse = (str: string) => {
+export function reverse(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
@@ -23,9 +23,9 @@ export const reverse = (str: string) => {
     .split('')
     .reverse()
     .join('');
-};
+}
 
-export const reverseWord = (str: string) => {
+export function reverseWord(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
@@ -35,25 +35,25 @@ export const reverseWord = (str: string) => {
     .split(' ')
     .reverse()
     .join(' ');
-};
+}
 
-export const isUpperCase = (str: string) => {
+export function isUpperCase(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
   }
   return str === str.toUpperCase() && str !== str.toLowerCase();
-};
+}
 
-export const isLowerCase = (str: string) => {
+export function isLowerCase(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
   }
   return str !== str.toUpperCase() && str === str.toLowerCase();
-};
+}
 
-export const toCamelCase = (str: string) => {
+export function toCamelCase(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
@@ -76,9 +76,9 @@ export const toCamelCase = (str: string) => {
     }
   }
   return str;
-};
+}
 
-export const isPalindrome = (str: string) => {
+export function isPalindrome(str: string) {
   if (typeof str !== 'string') {
     console.log('Invalid parameter type.');
     return;
@@ -100,15 +100,15 @@ export const isPalindrome = (str: string) => {
     }
   }
   return palindrome;
-};
+}
 
-export const areEqual = (str1: string, str2: string) => {
+export function areEqual(str1: string, str2: string) {
   return str1 === str2;
-};
+}
 
-export const areEqualIgnoreCase = (str1: string, str2: string) => {
+export function areEqualIgnoreCase(str1: string, str2: string) {
   return str1.toLowerCase() === str2.toLowerCase();
-};
+}
 
 export function compareMany(...args: any[]) {
   args = [...args];
