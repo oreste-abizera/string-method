@@ -31,18 +31,19 @@ console.log(capitalize('my sTring')); //My String
 
 ## Available Methods
 
-| Method              | Description                                                                                                     |
-| ------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `capitalize`        | changes the first letter of all words in string to upper case and the rest in lower case                        |
-| `reverse`           | reverses the order of the characters in a string                                                                |
-| `reverseWord`       | reverses the order of the words in a string                                                                     |
-| `isUpperCase`       | checks if a word is in upper case                                                                               |
-| `isLowerCase`       | checks if a word is in lower case                                                                               |
-| `toCamelCase`       | changes a word in any order to camel case notation                                                              |
-| `isPalindrome`      | checks if a string is the same in reverse order                                                                 |
-| `isEqual`           | checks if two strings are equal                                                                                 |
-| `isEqualIgnoreCase` | checks if two strings are equal but ignoring the case                                                           |
-| `compareMany`       | compares any number of strings passed as parameters. Returns true if they are equal otherwise false is returned |
+| Method                  | Description                                                                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `capitalize`            | changes the first letter of all words in string to upper case and the rest in lower case                                              |
+| `reverse`               | reverses the order of the characters in a string                                                                                      |
+| `reverseWord`           | reverses the order of the words in a string                                                                                           |
+| `isUpperCase`           | checks if a word is in upper case                                                                                                     |
+| `isLowerCase`           | checks if a word is in lower case                                                                                                     |
+| `toCamelCase`           | changes a word in any order to camel case notation                                                                                    |
+| `isPalindrome`          | checks if a string is the same in reverse order                                                                                       |
+| `areEqual`              | checks if two strings are equal                                                                                                       |
+| `areEqualIgnoreCase`    | checks if two strings are equal but ignoring the case                                                                                 |
+| `compareMany`           | compares any number of strings passed as parameters. Returns true if they are equal otherwise false is returned                       |
+| `compareManyIgnoreCase` | compares any number of strings passed as parameters but ignoring the case. Returns true if they are equal otherwise false is returned |
 
 We are adding others day by day.
 

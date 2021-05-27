@@ -1,7 +1,7 @@
 import {
   capitalize,
-  isEqual,
-  isEqualIgnoreCase,
+  areEqual,
+  areEqualIgnoreCase,
   isLowerCase,
   isPalindrome,
   isUpperCase,
@@ -97,23 +97,23 @@ describe('blah', () => {
 
 describe('equal', () => {
   it('checks equality of strings', () => {
-    expect(isEqual('string1', 'String1')).toEqual(false);
+    expect(areEqual('string1', 'String1')).toEqual(false);
   });
   it('checks equality of strings', () => {
-    expect(isEqual('string1', 'string1')).toEqual(true);
+    expect(areEqual('string1', 'string1')).toEqual(true);
   });
   it('checks equality of strings', () => {
-    expect(isEqual('string', 'String1')).toEqual(false);
+    expect(areEqual('string', 'String1')).toEqual(false);
   });
 
   it('checks equality of strings ignoring case', () => {
-    expect(isEqualIgnoreCase('string1', 'String1')).toEqual(true);
+    expect(areEqualIgnoreCase('string1', 'String1')).toEqual(true);
   });
   it('checks equality of strings ignoring case', () => {
-    expect(isEqualIgnoreCase('string1', 'string1')).toEqual(true);
+    expect(areEqualIgnoreCase('string1', 'string1')).toEqual(true);
   });
   it('checks equality of strings ignoring case', () => {
-    expect(isEqualIgnoreCase('string', 'string1')).toEqual(false);
+    expect(areEqualIgnoreCase('string', 'string1')).toEqual(false);
   });
 
   it('compares many strings', () => {

@@ -102,11 +102,11 @@ export const isPalindrome = (str: string) => {
   return palindrome;
 };
 
-export const isEqual = (str1: string, str2: string) => {
+export const areEqual = (str1: string, str2: string) => {
   return str1 === str2;
 };
 
-export const isEqualIgnoreCase = (str1: string, str2: string) => {
+export const areEqualIgnoreCase = (str1: string, str2: string) => {
   return str1.toLowerCase() === str2.toLowerCase();
 };
 
