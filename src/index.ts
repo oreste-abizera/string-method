@@ -11,6 +11,7 @@ import isPalindrome from './isPalindrome';
 import isUpperCase from './isUpperCase';
 import reverse from './reverse';
 import reverseWord from './reverseWord';
+import slugify from './slugify';
 import toCamelCase from './toCamelCase';
 
 export { capitalize };
@@ -27,3 +28,4 @@ export { compareManyIgnoreCase };
 export { contains };
 export { count };
 export { isEmpty };
+export { slugify };
