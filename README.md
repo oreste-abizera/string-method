@@ -53,6 +53,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `areEqualIgnoreCase`    | checks if two strings are equal but ignoring the case                                                                                 |
 | `compareMany`           | compares any number of strings passed as parameters. Returns true if they are equal otherwise false is returned                       |
 | `compareManyIgnoreCase` | compares any number of strings passed as parameters but ignoring the case. Returns true if they are equal otherwise false is returned |
+| `contains`              | checks if a string contains another string                                                                                            |
 
 We are adding others day by day.
 
