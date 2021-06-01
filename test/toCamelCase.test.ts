@@ -31,4 +31,12 @@ describe('toCamelCase', () => {
   it('converts to camelcase', () => {
     expect(toCamelCase('camelCase')).toEqual('camelCase');
   });
+
+  it('converts to camelcase', () => {
+    expect(toCamelCase('to-camel_case')).toEqual('toCamelCase');
+  });
+
+  it('converts to camelcase', () => {
+    expect(toCamelCase('to-camel_case case')).toEqual('toCamelCaseCase');
+  });
 });
