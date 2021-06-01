@@ -54,6 +54,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `compareMany`           | compares any number of strings passed as parameters. Returns true if they are equal otherwise false is returned                       |
 | `compareManyIgnoreCase` | compares any number of strings passed as parameters but ignoring the case. Returns true if they are equal otherwise false is returned |
 | `contains`              | checks if a string contains another string                                                                                            |
+| `count`                 | checks the number of times a specified value occurs in a string                                                                       |
 
 We are adding others day by day.
 
