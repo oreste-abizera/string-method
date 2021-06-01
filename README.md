@@ -56,6 +56,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `contains`              | checks if a string contains another string                                                                                            |
 | `count`                 | checks the number of times a specified value occurs in a string                                                                       |
 | `isEmpty`               | checks whether a string is empty or not                                                                                               |
+| `slugify`               | makes a slug from a string                                                                                                            |
 
 We are adding others day by day.
 
