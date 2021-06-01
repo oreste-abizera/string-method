@@ -29,6 +29,15 @@ const { capitalize } = require('string-method');
 console.log(capitalize('my sTring')); //My String
 ```
 
+or import one method individually
+
+```js
+const toCamelCase = require('string-method/toCamelCase');
+
+// call a method from module
+console.log(toCamelCase('to-camel-case')); //toCamelCase
+```
+
 ## Available Methods
 
 | Method                  | Description                                                                                                                           |
