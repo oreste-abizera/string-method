@@ -1,6 +1,6 @@
 import { throwError } from './utils/Error';
 
-export function reverseWord(str: string, separator: string = ' ') {
+export default function reverseWord(str: string, separator: string = ' ') {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }

@@ -1,6 +1,6 @@
 import { throwError } from './utils/Error';
 
-export function capitalize(str: string) {
+export default function capitalize(str: string) {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }

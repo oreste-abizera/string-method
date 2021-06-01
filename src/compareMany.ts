@@ -1,4 +1,4 @@
-export function compareMany(...args: any[]) {
+export default function compareMany(...args: any[]) {
   args = [...args];
   if (args.length === 0) return false;
   let equal = true;

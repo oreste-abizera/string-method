@@ -1,17 +1,8 @@
-import { isUpperCase } from './isUpperCase';
+import isUpperCase from './isUpperCase';
 import { throwError } from './utils/Error';
+import splitMulti from './utils/splitMulti';
 
-function splitMulti(str: string, tokens: Array<string>) {
-  var tempChar = tokens[0]; // We can use the first token as a temporary join character
-  let result: Array<string>;
-  for (var i = 1; i < tokens.length; i++) {
-    str = str.split(tokens[i]).join(tempChar);
-  }
-  result = str.split(tempChar);
-  return result;
-}
-
-export function toCamelCase(str: string) {
+export default function toCamelCase(str: string) {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }
