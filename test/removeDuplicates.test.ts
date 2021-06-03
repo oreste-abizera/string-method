@@ -8,4 +8,8 @@ describe('removeDuplicates', () => {
   it('removes duplicate words from a string', () => {
     expect(removeDuplicates('hello')).toEqual('hello');
   });
+
+  it('removes duplicate words from a string', () => {
+    expect(removeDuplicates('print hello print')).toEqual('print hello');
+  });
 });

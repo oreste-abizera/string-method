@@ -57,6 +57,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `count`                 | checks the number of times a specified value occurs in a string                                                                       |
 | `isEmpty`               | checks whether a string is empty or not                                                                                               |
 | `slugify`               | makes a slug from a string                                                                                                            |
+| `removeDuplicates`      | removes duplicate words from a string                                                                                                 |
 
 We are adding others day by day.
 
