@@ -63,6 +63,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `isDigit`               | checks whether all string characters are digits                                                                                       |
 | `isAlpha`               | checks whether all string characters are alphabetical characters                                                                      |
 | `isAlphaNumeric`        | checks whether all string characters are alphanumeric characters                                                                      |
+| `longestCombination`    | returns longest possible sorted combination of strings containing distinct letters in lowercase                                       |
 
 We are adding others day by day.
 
