@@ -60,6 +60,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `removeDuplicates`      | removes duplicate words from a string                                                                                                 |
 | `isSpace`               | checks whether all string characters are spaces                                                                                       |
 | `isDigit`               | checks whether all string characters are digits                                                                                       |
+| `isAlpha`               | checks whether all string characters are alphabetical characters                                                                      |
 
 We are adding others day by day.
 

@@ -5,6 +5,7 @@ import compareMany from './compareMany';
 import compareManyIgnoreCase from './compareManyIgnoreCase';
 import contains from './contains';
 import count from './count';
+import isAlpha from './isAlpha';
 import isDigit from './isDigit';
 import isEmpty from './isEmpty';
 import isLowerCase from './isLowerCase';
@@ -36,4 +37,5 @@ export {
   isSpace,
   compareMany,
   compareManyIgnoreCase,
+  isAlpha,
 };
