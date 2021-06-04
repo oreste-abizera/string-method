@@ -5,6 +5,7 @@ import compareMany from './compareMany';
 import compareManyIgnoreCase from './compareManyIgnoreCase';
 import contains from './contains';
 import count from './count';
+import isDigit from './isDigit';
 import isEmpty from './isEmpty';
 import isLowerCase from './isLowerCase';
 import isPalindrome from './isPalindrome';
@@ -16,20 +17,23 @@ import reverseWord from './reverseWord';
 import slugify from './slugify';
 import toCamelCase from './toCamelCase';
 
-export { capitalize };
-export { reverse };
-export { reverseWord };
-export { isUpperCase };
-export { isLowerCase };
-export { toCamelCase };
-export { isPalindrome };
-export { areEqual };
-export { areEqualIgnoreCase };
-export { compareMany };
-export { compareManyIgnoreCase };
-export { contains };
-export { count };
-export { isEmpty };
-export { slugify };
-export { removeDuplicates };
-export { isSpace };
+export {
+  capitalize,
+  reverse,
+  reverseWord,
+  isUpperCase,
+  isLowerCase,
+  toCamelCase,
+  isPalindrome,
+  areEqual,
+  areEqualIgnoreCase,
+  contains,
+  count,
+  isDigit,
+  isEmpty,
+  slugify,
+  removeDuplicates,
+  isSpace,
+  compareMany,
+  compareManyIgnoreCase,
+};

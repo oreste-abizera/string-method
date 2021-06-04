@@ -59,6 +59,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `slugify`               | makes a slug from a string                                                                                                            |
 | `removeDuplicates`      | removes duplicate words from a string                                                                                                 |
 | `isSpace`               | checks whether all string characters are spaces                                                                                       |
+| `isDigit`               | checks whether all string characters are digits                                                                                       |
 
 We are adding others day by day.
 
