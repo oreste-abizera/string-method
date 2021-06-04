@@ -58,6 +58,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `isEmpty`               | checks whether a string is empty or not                                                                                               |
 | `slugify`               | makes a slug from a string                                                                                                            |
 | `removeDuplicates`      | removes duplicate words from a string                                                                                                 |
+| `isSpace`               | checks whether all string characters are spaces                                                                                       |
 
 We are adding others day by day.
 
