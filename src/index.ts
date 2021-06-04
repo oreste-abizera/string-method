@@ -6,6 +6,7 @@ import compareManyIgnoreCase from './compareManyIgnoreCase';
 import contains from './contains';
 import count from './count';
 import isAlpha from './isAlpha';
+import isAlphaNumeric from './isAlphaNumeric';
 import isDigit from './isDigit';
 import isEmpty from './isEmpty';
 import isLowerCase from './isLowerCase';
@@ -38,4 +39,5 @@ export {
   compareMany,
   compareManyIgnoreCase,
   isAlpha,
+  isAlphaNumeric,
 };

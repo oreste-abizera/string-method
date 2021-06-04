@@ -61,6 +61,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `isSpace`               | checks whether all string characters are spaces                                                                                       |
 | `isDigit`               | checks whether all string characters are digits                                                                                       |
 | `isAlpha`               | checks whether all string characters are alphabetical characters                                                                      |
+| `isAlphaNumeric`        | checks whether all string characters are alphanumeric characters                                                                      |
 
 We are adding others day by day.
 
