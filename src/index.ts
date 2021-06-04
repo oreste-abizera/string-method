@@ -14,6 +14,7 @@ import isLowerCase from './isLowerCase';
 import isPalindrome from './isPalindrome';
 import isSpace from './isSpace';
 import isUpperCase from './isUpperCase';
+import longestCombination from './longestCombination';
 import removeDuplicates from './removeDuplicates';
 import reverse from './reverse';
 import reverseWord from './reverseWord';
@@ -42,4 +43,5 @@ export {
   isAlpha,
   isAlphaNumeric,
   countCharacters,
+  longestCombination,
 };
