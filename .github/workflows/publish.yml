@@ -1,22 +1,45 @@
 name: npm-publish
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 jobs:
-  build:
+  npm-publish:
+    name: npm-publish
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      # Publish to Node Package Manager
+      - name: Checkout Repo
+        uses: actions/checkout@main
+
+      - name: Setup Node.js (NPM)
+        uses: actions/setup-node@master
         with:
-          node-version: 14
-          registry-url: https://registry.npmjs.org/
-      - run: npm install
-      - run: npm run build
-      - run: npm run test
-      - run: npm publish --access public
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Use cached node_modules
+        uses: actions/cache@master
+        with:
+          path: node_modules
+          key: nodeModules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            nodeModules-
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          CI: true
+
+      - name: Update Publish Config
+        run: sed -i 's^registry-url^registry.npmjs.org^' package.json
+
+      - name: Publish to NPM
+        run: npm publish --access public
+        env:
+          CI: true
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   gpr-publish:
     name: gpr-publish
