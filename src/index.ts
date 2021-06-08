@@ -20,6 +20,7 @@ import reverse from './reverse';
 import reverseWord from './reverseWord';
 import slugify from './slugify';
 import toCamelCase from './toCamelCase';
+import countRepetitions from './countRepetitions';
 
 export {
   capitalize,
@@ -44,4 +45,5 @@ export {
   isAlphaNumeric,
   countCharacters,
   longestCombination,
+  countRepetitions,
 };

@@ -55,7 +55,9 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `compareManyIgnoreCase` | compares any number of strings passed as parameters but ignoring the case. Returns true if they are equal otherwise false is returned |
 | `contains`              | checks if a string contains another string                                                                                            |
 | `count`                 | checks the number of times a specified value occurs in a string                                                                       |
-| `countCharacters`       | returns occurences of each character in a string                                                                                      |
+| `countCharacters`       | returns occurences of each character in a                                                                                             |
+| string                  |
+| `countRepetitions`      | returns letters of a string with its repetition times                                                                                 |
 | `isEmpty`               | checks whether a string is empty or not                                                                                               |
 | `slugify`               | makes a slug from a string                                                                                                            |
 | `removeDuplicates`      | removes duplicate words from a string                                                                                                 |
