@@ -21,6 +21,7 @@ import reverseWord from './reverseWord';
 import slugify from './slugify';
 import toCamelCase from './toCamelCase';
 import countRepetitions from './countRepetitions';
+import toAlternatingCase from './toAlternatingCase';
 
 export {
   capitalize,
@@ -46,4 +47,5 @@ export {
   countCharacters,
   longestCombination,
   countRepetitions,
+  toAlternatingCase,
 };
