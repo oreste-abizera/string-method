@@ -1,6 +1,6 @@
 import isUpperCase from './isUpperCase';
-import { throwError } from './utils/Error';
-import splitMulti from './utils/splitMulti';
+import { throwError } from '../utils/Error';
+import splitMulti from '../utils/splitMulti';
 
 export default function toCamelCase(str: string) {
   if (typeof str !== 'string') {
