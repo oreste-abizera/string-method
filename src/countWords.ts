@@ -1,3 +1,8 @@
-export default function countWords(text: string){
-    return text.split(' ').length;
+/**
+ * 
+ * @param str whose to check words.
+ * @returns number of words in provided string.
+ */
+export default function countWords(str: string){
+    return str.split(' ').length;
 }
