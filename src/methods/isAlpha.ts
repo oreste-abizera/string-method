@@ -1,5 +1,17 @@
 import isCharacterALetter from '../utils/isCharacterALetter';
 
+/**
+ *
+ * @param str provided string.
+ * @returns boolean
+ * @description checks whether all string characters are alphabetical characters.
+ *
+ * @example```javascript
+ * console.log(isAlpha('')) //false
+ * console.log(isAlpha('hello')) //true
+ * console.log(isAlpha('hello123')) //false
+ * ```
+ */
 export default function isAlpha(str: string) {
   let AlphaFound = false;
   let nonAlphaFound = true;

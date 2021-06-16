@@ -2,6 +2,20 @@ import isUpperCase from './isUpperCase';
 import { throwError } from '../utils/Error';
 import splitMulti from '../utils/splitMulti';
 
+/**
+ *
+ * @param str1 provided string.
+ * @returns string
+ * @description converts a string to camelcase
+ *
+ * @example```javascript
+ * console.log(toCamelCase('PascalCase')) //pascalCase
+ * console.log(toCamelCase(' Train-Case')) //trainCase
+ * console.log(toCamelCase('to-camel_case case')) //toCamelCaseCase
+ *
+ * ```
+ */
+
 export default function toCamelCase(str: string) {
   if (typeof str !== 'string') {
     return throwError(str, 'string');

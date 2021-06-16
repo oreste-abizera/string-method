@@ -1,5 +1,21 @@
 import { throwError } from '../utils/Error';
 
+/**
+ *
+ * @param str provided string.
+ * @param separator optional
+ * @returns boolean
+ * @description checks whether a string is palindrome.
+ *
+ * @example```javascript
+ * console.log(isPalindrome('string')) //false
+ * console.log(isPalindrome('s/t/r/i/n/g', '/')) //false
+ * console.log(isPalindrome('A Santa Lived As a Devil At NASA')) //true
+ * console.log(isPalindrome('A-Santa-Lived-As-a-Devil-At-NASA', '-')) //true
+ *
+ * ```
+ */
+
 export default function isPalindrome(str: string, separator: string = ' ') {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
