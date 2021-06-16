@@ -1,3 +1,16 @@
+/**
+ *
+ * @param str provided string.
+ * @param search provided search value.
+ * @returns number
+ * @description checks the number of times a search occurs in a string.
+ *
+ * @example```javascript
+ * console.log(count('number of times', 'of')) //1
+ * console.log(count('number of times', ' ')) //2
+ * ```
+ */
+
 export default function count(str: string, search: string) {
   let strLen = str.length;
   let searchLen = search.length;
