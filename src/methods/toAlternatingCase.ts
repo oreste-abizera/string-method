@@ -1,4 +1,4 @@
-import changeCase from './utils/changeCase';
+import changeCase from '../utils/changeCase';
 
 export default function toAlternatingCase(str: string) {
   return str

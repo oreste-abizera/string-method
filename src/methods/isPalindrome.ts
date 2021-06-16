@@ -1,4 +1,4 @@
-import { throwError } from './utils/Error';
+import { throwError } from '../utils/Error';
 
 export default function isPalindrome(str: string, separator: string = ' ') {
   if (typeof str !== 'string') {

@@ -1,4 +1,4 @@
-import isCharacterAlphaNumeric from './utils/isCharacterAlphaNumeric';
+import isCharacterAlphaNumeric from '../utils/isCharacterAlphaNumeric';
 
 export default function isAlphaNumeric(str: string) {
   let AlphaNumericFound = false;
