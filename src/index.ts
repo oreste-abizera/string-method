@@ -5,7 +5,7 @@ import compareMany from './methods/compareMany';
 import compareManyIgnoreCase from './methods/compareManyIgnoreCase';
 import contains from './methods/contains';
 import count from './methods/count';
-import  hasSpaces from './methods/hasSpaces';
+import hasSpaces from './methods/hasSpaces';
 import countWords from './methods/countWords';
 import countVowels from './methods/countVowels';
 import startsWith from './methods/startsWith';
@@ -59,5 +59,5 @@ export {
   hasSpaces,
   countVowels,
   countWords,
-  countSpaces
+  countSpaces,
 };
