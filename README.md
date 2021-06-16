@@ -67,6 +67,12 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `isAlphaNumeric`        | checks whether all string characters are alphanumeric characters                                                                      |
 | `longestCombination`    | returns longest possible sorted combination of strings containing distinct letters in lowercase                                       |
 | `toAlternatingCase`     | returns a new string with each lowercase letter changed to uppercase and each uppercase letter changed to lowercase                   |
+| `hasSpaces`             | returns true if a string contains one or more spaces otherwise it returns false                                                       |
+| `countWords`            | returns number of words in a string                                                                                                   |
+| `countConsonants`       | returns number of consonants in a provided string                                                                                     |
+| `countVowels`           | returns number of vowels in a provided string                                                                                         |
+| `startsWith`            | returns true if the first string starts with the provided second string otherwise returns false                                       |
+| `countSpaces`           | returns the number of spaces in a string                                                                                              |
 
 We are adding others day by day.
 
