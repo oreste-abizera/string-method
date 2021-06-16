@@ -5,6 +5,11 @@ import compareMany from './compareMany';
 import compareManyIgnoreCase from './compareManyIgnoreCase';
 import contains from './contains';
 import count from './count';
+import  hasSpaces from './hasSpaces';
+import countWords from './countWords';
+import countVowels from './countVowels';
+import startsWith from './startsWith';
+import countConsonants from './countConsonants';
 import countCharacters from './countCharacters';
 import isAlpha from './isAlpha';
 import isAlphaNumeric from './isAlphaNumeric';
@@ -22,6 +27,7 @@ import slugify from './slugify';
 import toCamelCase from './toCamelCase';
 import countRepetitions from './countRepetitions';
 import toAlternatingCase from './toAlternatingCase';
+import countSpaces from './countSpaces';
 
 export {
   capitalize,
@@ -48,4 +54,10 @@ export {
   longestCombination,
   countRepetitions,
   toAlternatingCase,
+  startsWith,
+  countConsonants,
+  hasSpaces,
+  countVowels,
+  countWords,
+  countSpaces
 };

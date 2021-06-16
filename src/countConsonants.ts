@@ -1,6 +1,8 @@
-import countVowels from "./countVowels";
-import countWords from "./countWords";
-
+/**
+ * 
+ * @param str
+ * @returns returns number of consonants in a string provided
+ */
 export default function countConsonants(str: string){
-    return str.length - countVowels(str) - countWords(str) - 1;
+    return Array.from(str).filter(letter => 'qwrtypsdfghjklzxcvbnm'.includes(letter)).length;
 }
