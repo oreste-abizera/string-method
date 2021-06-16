@@ -79,3 +79,7 @@ We are adding others day by day.
 ## Development
 
 Visit our github repository [here](https://github.com/oreste-abizera/string-method). Any suggestion or improvement on this library is welcome.
+
+## Contributing
+
+Before contributing to this library read this [guide](https://github.com/oreste-abizera/string-method/blob/main/CONTRIBUTING.md). We'll love getting new idea from you.
