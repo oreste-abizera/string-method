@@ -2,7 +2,7 @@ import changeCase from '../utils/changeCase';
 
 /**
  *
- * @param str1 provided string.
+ * @param str provided string.
  * @returns string
  * @description changes a string to alternate case
  *

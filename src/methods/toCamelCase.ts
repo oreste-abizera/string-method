@@ -4,7 +4,7 @@ import splitMulti from '../utils/splitMulti';
 
 /**
  *
- * @param str1 provided string.
+ * @param str provided string.
  * @returns string
  * @description converts a string to camelcase
  *
