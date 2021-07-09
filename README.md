@@ -73,6 +73,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `countVowels`           | returns number of vowels in a provided string                                                                                         |
 | `startsWith`            | returns true if the first string starts with the provided second string otherwise returns false                                       |
 | `countSpaces`           | returns the number of spaces in a string                                                                                              |
+| `toTitleCase`           | changes the string to title case by capitalizing all words in the string except non-starting prepositions                             |
 
 We are adding others day by day.
 
