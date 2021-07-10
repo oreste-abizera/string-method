@@ -11,7 +11,7 @@
  * console.log(isDigit('hello123')) //false
  * ```
  */
-export default function isDigit(str: string) {
+export default function isDigit(str: string): boolean {
   if (str.includes(' ')) return false;
   return !isNaN(parseFloat(str));
 }

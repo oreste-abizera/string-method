@@ -11,6 +11,6 @@
  * ```
  */
 
-export default function contains(str: string, substr: string) {
+export default function contains(str: string, substr: string): boolean {
   return str.indexOf(substr) > -1;
 }

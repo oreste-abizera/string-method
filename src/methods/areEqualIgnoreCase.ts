@@ -10,6 +10,9 @@
  * console.log(areEqualIgnoreCase("user","User")) //true
  * ```
  */
-export default function areEqualIgnoreCase(str1: string, str2: string) {
+export default function areEqualIgnoreCase(
+  str1: string,
+  str2: string
+): boolean {
   return str1.toLowerCase() === str2.toLowerCase();
 }

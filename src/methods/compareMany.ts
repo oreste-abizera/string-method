@@ -9,7 +9,7 @@
  * console.log(compareMany('string1', 'string1', 'string1')) //true
  * ```
  */
-export default function compareMany(...args: any[]) {
+export default function compareMany(...args: any[]): boolean {
   args = [...args];
   if (args.length === 0) return false;
   let equal = true;

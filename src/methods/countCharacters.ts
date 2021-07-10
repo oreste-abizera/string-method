@@ -14,7 +14,7 @@ interface Count {
  * ```
  */
 
-export default function countCharacters(str: string) {
+export default function countCharacters(str: string): Count {
   let count: Count = {};
   str.split('').forEach(char => {
     count[char] = count[char] ? count[char] + 1 : 1;

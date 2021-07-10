@@ -16,9 +16,12 @@ import { throwError } from '../utils/Error';
  * ```
  */
 
-export default function isPalindrome(str: string, separator: string = ' ') {
+export default function isPalindrome(
+  str: string,
+  separator: string = ' '
+): boolean {
   if (typeof str !== 'string') {
-    return throwError(str, 'string');
+    throwError(str, 'string');
   }
   str = str
     .split(separator)

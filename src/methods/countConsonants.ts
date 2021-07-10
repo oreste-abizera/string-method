@@ -11,7 +11,7 @@
  * ```
  */
 
-export default function countConsonants(str: string) {
+export default function countConsonants(str: string): number {
   return Array.from(str).filter(letter =>
     'qwrtypsdfghjklzxcvbnm'.includes(letter)
   ).length;

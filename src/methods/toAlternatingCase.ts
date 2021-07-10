@@ -14,7 +14,7 @@ import changeCase from '../utils/changeCase';
  * ```
  */
 
-export default function toAlternatingCase(str: string) {
+export default function toAlternatingCase(str: string): string {
   return str
     .split('')
     .map(char => changeCase(char))

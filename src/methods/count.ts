@@ -11,7 +11,7 @@
  * ```
  */
 
-export default function count(str: string, search: string) {
+export default function count(str: string, search: string): number {
   let strLen = str.length;
   let searchLen = search.length;
   let res = 0;

@@ -10,6 +10,6 @@
  * ```
  */
 
-export default function slugify(str: string) {
+export default function slugify(str: string): string {
   return str.split(' ').join('-');
 }

@@ -12,6 +12,6 @@ import countSpaces from './countSpaces';
  * console.log(hasSpaces('data lmn dsad das')) //true
  * ```
  */
-export default function hasSpaces(str: string) {
+export default function hasSpaces(str: string): boolean {
   return countSpaces(str) > 0;
 }

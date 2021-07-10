@@ -12,7 +12,7 @@ import isCharacterALetter from '../utils/isCharacterALetter';
  * console.log(isAlpha('hello123')) //false
  * ```
  */
-export default function isAlpha(str: string) {
+export default function isAlpha(str: string): boolean {
   let AlphaFound = false;
   let nonAlphaFound = true;
   for (const character of str) {

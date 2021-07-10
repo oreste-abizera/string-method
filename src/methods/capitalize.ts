@@ -11,7 +11,7 @@ import { throwError } from '../utils/Error';
  * console.log(capitalize("MY STRING","user")) //My String
  * ```
  */
-export default function capitalize(str: string) {
+export default function capitalize(str: string): string {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }

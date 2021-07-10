@@ -16,7 +16,7 @@ import splitMulti from '../utils/splitMulti';
  * ```
  */
 
-export default function toCamelCase(str: string) {
+export default function toCamelCase(str: string): string {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }

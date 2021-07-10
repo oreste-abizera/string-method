@@ -10,6 +10,6 @@
  * console.log(areEqual("user","user")) //true
  * ```
  */
-export default function areEqual(str1: string, str2: string) {
+export default function areEqual(str1: string, str2: string): boolean {
   return str1 === str2;
 }

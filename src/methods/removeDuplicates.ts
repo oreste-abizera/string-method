@@ -11,6 +11,6 @@
  * ```
  */
 
-export default function removeDuplicates(str: string) {
+export default function removeDuplicates(str: string): string {
   return [...new Set(str.split(' '))].join(' ');
 }

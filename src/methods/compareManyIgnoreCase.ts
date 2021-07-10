@@ -10,7 +10,7 @@
  * ```
  */
 
-export default function compareManyIgnoreCase(...args: any[]) {
+export default function compareManyIgnoreCase(...args: any[]): boolean {
   args = [...args];
   if (args.length === 0) return false;
   let equal = true;

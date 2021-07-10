@@ -13,7 +13,7 @@ import { throwError } from '../utils/Error';
  * ```
  */
 
-export default function reverse(str: string, separator: string = '') {
+export default function reverse(str: string, separator: string = ''): string {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }

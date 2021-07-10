@@ -13,6 +13,6 @@
  * ```
  */
 
-export default function startsWith(str1: string, str2: string) {
+export default function startsWith(str1: string, str2: string): boolean {
   return str1.startsWith(str2);
 }

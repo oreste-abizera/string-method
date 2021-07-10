@@ -13,7 +13,7 @@ import isCharacterAlphaNumeric from '../utils/isCharacterAlphaNumeric';
  * console.log(isAlphaNumeric('hello ')) //false
  * ```
  */
-export default function isAlphaNumeric(str: string) {
+export default function isAlphaNumeric(str: string): boolean {
   let AlphaNumericFound = false;
   let nonAlphaNumericFound = true;
   for (const character of str) {

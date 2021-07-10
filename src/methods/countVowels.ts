@@ -10,6 +10,6 @@
  * console.log(countVowels('strng')) //0
  * ```
  */
-export default function countVowels(str: string) {
+export default function countVowels(str: string): number {
   return Array.from(str).filter(letter => 'aeiou'.includes(letter)).length;
 }

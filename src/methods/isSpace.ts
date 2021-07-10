@@ -13,7 +13,7 @@
  * ```
  */
 
-export default function isSpace(str: string) {
+export default function isSpace(str: string): boolean {
   let spaceFound = false;
   let nonSpaceFound = true;
   for (const character of str) {

@@ -10,6 +10,6 @@
  * ```
  */
 
-export default function longestCombination(...params: Array<string>) {
+export default function longestCombination(...params: Array<string>): string {
   return [...new Set(params.join('').toLowerCase())].sort().join('');
 }

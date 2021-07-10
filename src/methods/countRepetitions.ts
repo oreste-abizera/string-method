@@ -10,7 +10,7 @@
  * ```
  */
 
-export default function countRepetitions(str: string) {
+export default function countRepetitions(str: string): string {
   let result = '';
 
   let count = 1;

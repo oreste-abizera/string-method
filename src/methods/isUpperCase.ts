@@ -13,9 +13,9 @@ import { throwError } from '../utils/Error';
  * ```
  */
 
-export default function isUpperCase(str: string) {
+export default function isUpperCase(str: string): boolean {
   if (typeof str !== 'string') {
-    return throwError(str, 'string');
+    throwError(str, 'string');
   }
   return str === str.toUpperCase() && str !== str.toLowerCase();
 }

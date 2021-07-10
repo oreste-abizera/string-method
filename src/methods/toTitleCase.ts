@@ -16,7 +16,7 @@ import capitalize from './capitalize';
  * ```
  */
 
-export default function toTitleCase(str: string) {
+export default function toTitleCase(str: string): string {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }

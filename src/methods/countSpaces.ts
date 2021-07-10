@@ -11,6 +11,6 @@ import countWords from './countWords';
  * console.log(countSpaces('hello there')) //1
  * ```
  */
-export default function countSpaces(str: string) {
+export default function countSpaces(str: string): number {
   return countWords(str) - 1;
 }

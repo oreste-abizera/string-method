@@ -10,6 +10,6 @@
  * console.log(countWords('data lmn dsad das')) //4
  * ```
  */
-export default function countWords(str: string) {
+export default function countWords(str: string): number {
   return str.split(' ').length;
 }
