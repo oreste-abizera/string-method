@@ -11,6 +11,13 @@
  * ```
  */
 
+import { throwError } from '../utils/Error';
+
 export default function isEmpty(str: string): boolean {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return false;
+  }
+
   return str.length === 0;
 }

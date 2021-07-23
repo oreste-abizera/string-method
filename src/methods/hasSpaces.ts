@@ -1,3 +1,4 @@
+import { throwError } from '../utils/Error';
 import countSpaces from './countSpaces';
 
 /**
@@ -13,5 +14,10 @@ import countSpaces from './countSpaces';
  * ```
  */
 export default function hasSpaces(str: string): boolean {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return false;
+  }
+
   return countSpaces(str) > 0;
 }

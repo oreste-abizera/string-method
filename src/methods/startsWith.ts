@@ -13,6 +13,12 @@
  * ```
  */
 
+import { throwError } from '../utils/Error';
+
 export default function startsWith(str1: string, str2: string): boolean {
+  if (typeof str1 !== 'string' || typeof str2 !== 'string') {
+    throwError(typeof str1 !== 'string' ? str1 : str2, 'string');
+    return false;
+  }
   return str1.startsWith(str2);
 }

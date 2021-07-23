@@ -1,3 +1,4 @@
+import { throwError } from '../utils/Error';
 import isCharacterALetter from '../utils/isCharacterALetter';
 
 /**
@@ -13,6 +14,11 @@ import isCharacterALetter from '../utils/isCharacterALetter';
  * ```
  */
 export default function isAlpha(str: string): boolean {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return false;
+  }
+
   let AlphaFound = false;
   let nonAlphaFound = true;
   for (const character of str) {

@@ -21,6 +21,8 @@ export default function reverseWord(
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }
+  if (!str) return '';
+
   return str
     .trim()
     .split(separator)

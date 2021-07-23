@@ -1,3 +1,5 @@
+import { throwError } from '../utils/Error';
+
 /**
  *
  * @param str provided string.
@@ -12,6 +14,11 @@
  * ```
  */
 export default function isDigit(str: string): boolean {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return false;
+  }
+
   if (str.includes(' ')) return false;
   return !isNaN(parseFloat(str));
 }

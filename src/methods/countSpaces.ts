@@ -1,3 +1,4 @@
+import { throwError } from '../utils/Error';
 import countWords from './countWords';
 
 /**
@@ -12,5 +13,10 @@ import countWords from './countWords';
  * ```
  */
 export default function countSpaces(str: string): number {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return -1;
+  }
+
   return countWords(str) - 1;
 }

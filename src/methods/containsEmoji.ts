@@ -1,3 +1,5 @@
+import { throwError } from '../utils/Error';
+
 /**
  *
  * @param str provided string.
@@ -11,6 +13,11 @@
  * ```
  */
 export default function containsEmoji(str: string): boolean {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return false;
+  }
+
   const regexExp = /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/gi;
   return regexExp.test(str);
 }

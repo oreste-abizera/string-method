@@ -1,3 +1,5 @@
+import { throwError } from '../utils/Error';
+
 /**
  *
  * @param str whose to check words.
@@ -11,5 +13,10 @@
  * ```
  */
 export default function countWords(str: string): number {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return -1;
+  }
+
   return str.split(' ').length;
 }

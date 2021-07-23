@@ -20,9 +20,11 @@ export default function isPalindrome(
   str: string,
   separator: string = ' '
 ): boolean {
-  if (typeof str !== 'string') {
-    throwError(str, 'string');
+  if (typeof str !== 'string' || typeof separator !== 'string') {
+    throwError(typeof str !== 'string' ? str : separator, 'string');
+    return false;
   }
+
   str = str
     .split(separator)
     .join('')

@@ -11,6 +11,13 @@
  * ```
  */
 
+import { throwError } from '../utils/Error';
+
 export default function contains(str: string, substr: string): boolean {
+  if (typeof str !== 'string' || typeof substr !== 'string') {
+    throwError(typeof str !== 'string' ? str : substr, 'string');
+    return false;
+  }
+
   return str.indexOf(substr) > -1;
 }

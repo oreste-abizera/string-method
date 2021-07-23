@@ -1,3 +1,5 @@
+import { throwError } from '../utils/Error';
+
 interface Count {
   [key: string]: number;
 }
@@ -15,6 +17,12 @@ interface Count {
  */
 
 export default function countCharacters(str: string): Count {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    let c: Count = {};
+    return c;
+  }
+
   let count: Count = {};
   str.split('').forEach(char => {
     count[char] = count[char] ? count[char] + 1 : 1;

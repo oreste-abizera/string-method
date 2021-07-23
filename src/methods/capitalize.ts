@@ -15,6 +15,8 @@ export default function capitalize(str: string): string {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }
+  if (!str) return '';
+
   if (str.length < 0) {
     return str;
   }

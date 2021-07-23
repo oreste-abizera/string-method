@@ -20,6 +20,8 @@ export default function toCamelCase(str: string): string {
   if (typeof str !== 'string') {
     return throwError(str, 'string');
   }
+  if (!str) return '';
+
   const symbols: Array<string> = ['-', '_', ' '];
   str = isUpperCase(str)
     ? str.trim()

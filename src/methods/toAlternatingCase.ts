@@ -1,4 +1,5 @@
 import changeCase from '../utils/changeCase';
+import { throwError } from '../utils/Error';
 
 /**
  *
@@ -15,6 +16,11 @@ import changeCase from '../utils/changeCase';
  */
 
 export default function toAlternatingCase(str: string): string {
+  if (typeof str !== 'string') {
+    return throwError(str, 'string');
+  }
+  if (!str) return '';
+
   return str
     .split('')
     .map(char => changeCase(char))

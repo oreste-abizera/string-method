@@ -1,3 +1,5 @@
+import { throwError } from '../utils/Error';
+
 /**
  *
  * @param str provided string.
@@ -11,6 +13,11 @@
  */
 
 export default function countRepetitions(str: string): string {
+  if (typeof str !== 'string') {
+    return throwError(str, 'string');
+  }
+  if (!str) return '';
+
   let result = '';
 
   let count = 1;

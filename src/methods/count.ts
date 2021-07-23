@@ -11,7 +11,14 @@
  * ```
  */
 
+import { throwError } from '../utils/Error';
+
 export default function count(str: string, search: string): number {
+  if (typeof str !== 'string' || typeof search !== 'string') {
+    throwError(typeof str !== 'string' ? str : search, 'string');
+    return -1;
+  }
+
   let strLen = str.length;
   let searchLen = search.length;
   let res = 0;

@@ -11,6 +11,13 @@
  * ```
  */
 
+import { throwError } from '../utils/Error';
+
 export default function removeDuplicates(str: string): string {
+  if (typeof str !== 'string') {
+    return throwError(str, 'string');
+  }
+  if (!str) return '';
+
   return [...new Set(str.split(' '))].join(' ');
 }

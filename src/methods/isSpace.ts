@@ -13,7 +13,14 @@
  * ```
  */
 
+import { throwError } from '../utils/Error';
+
 export default function isSpace(str: string): boolean {
+  if (typeof str !== 'string') {
+    throwError(str, 'string');
+    return false;
+  }
+
   let spaceFound = false;
   let nonSpaceFound = true;
   for (const character of str) {

@@ -1,3 +1,5 @@
+import { throwError } from '../utils/Error';
+
 /**
  *
  * @param str provided string.
@@ -10,5 +12,10 @@
  * ```
  */
 export default function removeSpaces(str: string): string {
+  if (typeof str !== 'string') {
+    return throwError(str, 'string');
+  }
+  if (!str) return '';
+
   return str.split(' ').join('');
 }
