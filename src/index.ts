@@ -29,6 +29,7 @@ import countRepetitions from './methods/countRepetitions';
 import toAlternatingCase from './methods/toAlternatingCase';
 import countSpaces from './methods/countSpaces';
 import toTitleCase from './methods/toTitleCase';
+import removeSpaces from './methods/removeSpaces';
 
 export {
   capitalize,
@@ -62,4 +63,5 @@ export {
   countWords,
   countSpaces,
   toTitleCase,
+  removeSpaces,
 };

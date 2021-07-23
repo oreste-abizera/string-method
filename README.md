@@ -29,7 +29,7 @@ const { capitalize } = require('string-method');
 console.log(capitalize('my sTring')); //My String
 ```
 
-or import one method individually
+or import one method individually (not working well)
 
 ```js
 const toCamelCase = require('string-method/toCamelCase');
@@ -74,6 +74,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `startsWith`            | returns true if the first string starts with the provided second string otherwise returns false                                       |
 | `countSpaces`           | returns the number of spaces in a string                                                                                              |
 | `toTitleCase`           | changes the string to title case by capitalizing all words in the string except non-starting prepositions                             |
+| `removeSpaces`          | removes all spaces in a string                                                                                                        |
 
 We are adding others day by day.
 
