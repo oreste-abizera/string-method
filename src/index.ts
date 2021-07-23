@@ -30,6 +30,7 @@ import toAlternatingCase from './methods/toAlternatingCase';
 import countSpaces from './methods/countSpaces';
 import toTitleCase from './methods/toTitleCase';
 import removeSpaces from './methods/removeSpaces';
+import containsEmoji from './methods/containsEmoji';
 
 export {
   capitalize,
@@ -64,4 +65,5 @@ export {
   countSpaces,
   toTitleCase,
   removeSpaces,
+  containsEmoji,
 };

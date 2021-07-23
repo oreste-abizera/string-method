@@ -75,6 +75,7 @@ console.log(toCamelCase('to-camel-case')); //toCamelCase
 | `countSpaces`           | returns the number of spaces in a string                                                                                              |
 | `toTitleCase`           | changes the string to title case by capitalizing all words in the string except non-starting prepositions                             |
 | `removeSpaces`          | removes all spaces in a string                                                                                                        |
+| `containsEmoji`         | checks if a string contains emoji or not                                                                                              |
 
 We are adding others day by day.
 
